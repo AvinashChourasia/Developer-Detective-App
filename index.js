@@ -50,8 +50,6 @@ function init() {
     lightModeProperties();
   }
 
-
-  //by default, pranaygupta ki info show krre h UI pr
   getUserData(url + "AvinashChourasia");
 }
 
@@ -155,7 +153,7 @@ function darkModeProperties() {
   root.setProperty("--lm-shadow-xl", "rgb(73 75 78 / 0.15)");
   root.setProperty("--btn","#6d7781e0")
   modetext.innerText = "LIGHT";
-  modeicon.src = "assets/sun-icon.svg";
+  modeicon.src = "sun-icon.svg";
   root.setProperty("--lm-icon-bg", "brightness(1000%)");
   darkMode = true;
   console.log("darkmode changed to " + darkMode);
@@ -172,7 +170,7 @@ function lightModeProperties() {
   root.setProperty("--lm-shadow-xl", "rgba(70, 88, 109, 0.25)");
   root.setProperty("--btn","#a2c9f0");
   modetext.innerText = "DARK";
-  modeicon.src = "assets/moon-icon.svg";
+  modeicon.src = "moon-icon.svg";
   root.setProperty("--lm-icon-bg", "brightness(100%)");
   darkMode = false;
   console.log("darkmode changed to " + darkMode);
